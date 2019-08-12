@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charaset="UTF-8">
+    <title>Material Design Login Form </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/login-form.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body translate="no" class="login-body">
+    <meta charset="utf-8">
+    <title>Login Form</title>
+
+    <div class="row">
+        <div class="input-container">
+            <div id="menu-toggle" style="left: 0">
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="login">
+                <h4 class="center">Log in</h4>
+                <form action="" method="post" class="form" autocomplete="off">
+                    <div class="row">
+                        <div class="input-field">
+                            <input type="text" id="user" name="username" class="validate" required="required" placeholder="Username">
+                            <label for="user" class="active">
+                          <i class="material-icons">person</i>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input type="password" id="pass" name="password" class="validate" required="required" placeholder="Password">
+                            <label for="user" class="active">
+                          <i class="material-icons">lock</i>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="switch col s6">
+                            <label>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Remember Me
+                    </label>
+                        </div>
+                    </div>
+                    <div class="row btn-row">
+                        <button type="submit" name="login" class="btn wave-effect waves-light">Log in</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="signup">
+                <h4 class="center signup-title">Sign up</h4>
+                <br>
+                <form action="" class="form" name="signup" method="post" autocomplete="off">
+                    <div class="row">
+                        <div class="input-field signup-username">
+                            <input type="text" id="name-picked" name="namepicked" class="validate" required="required" placeholder="Enter a username">
+                            <label for="name-picked" class="active">
+                              <i class="material-icons">person_add</i>
+                              </label>
+                        </div>
+                        <div class="input-field signup-password">
+                            <input type="password" id="pass-picked" name="passpicked" class="validate" required="required" placeholder="Password">
+                            <label for="pass-picked" class="active">
+                                <i class="material-icons">lock</i> </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field email">
+                            <div class="col s12">
+                                <input type="text" id="email" name="email" class="validate" required="required" placeholder="Enter your email">
+                                <label for="email" class="active">
+                                  <i class="material-icons">mail</i>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row btn-row">
+                    <button type="submit" name="btn-signup" class="btn btn-signup waves-effect waves-light">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script id="rendered-js">
+        $('#menu-toggle').on('click', function() {
+            $(this).toggleClass('open');
+            console.log($('signup').css('active'));
+            if (!$('.signup').hasClass('active')) {
+                $('.signup').addClass('active');
+            } else {
+                $('.signup').removeClass('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

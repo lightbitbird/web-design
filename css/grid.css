@@ -1,0 +1,253 @@
+body {
+  background-color: #f2f991;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.grid-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px auto;
+}
+
+@media (min-width: 920px) {
+  .grid-container {
+    max-width: 1000px;
+    display: grid;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 130px 130px 100px 130px 130px;
+    justify-content: center;
+    align-content: center;
+    /* grid-auto-rows: 12em; */
+    /* repeat(auto-fit, $box-size);
+  grid-auto-flow: dense;
+  max-width: 75em; */
+  }
+}
+
+.w-80 {
+  width: 80%;
+  display: inline-block;
+}
+
+.item-a {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-b {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.item-c {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-d {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-e {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-f {
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-g {
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-h {
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.item-i {
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+@media (min-width: 920px) {
+  .item-a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-b {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-c {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-d {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-e {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-f {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-g {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-h {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid #000;
+    align-items: center;
+  }
+
+  .item-i {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 1px solid #000;
+    align-items: center;
+  }
+}
+
+.item-content {
+  text-align: center;
+}
+
+.pv4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.f1 {
+  font-size: 1.25rem;
+}
+
+.f5 {
+  font-size: 1rem;
+}
+
+.f6 {
+  font-size: 0.875rem;
+}
+
+.f7 {
+  font-size: 0.5rem;
+}
+
+.ttu {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.mv0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pt3 {
+  padding-top: 1.25;
+}
+
+.lh-title {
+  line-height: 1.25;
+}
+
+.lora {
+  font-family: 'Lora', self;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
