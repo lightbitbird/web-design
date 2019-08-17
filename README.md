@@ -1,6 +1,6 @@
 # Learning Web Design widh html and css, js
 
-Web Desing for learning using simple html and css/sass, if necessary Javascript.
+Web Design for learning using simple html and css/sass, if necessary Javascript.
 
 This is mostly expired by and learning from [FREE FRONTEND](https://freefrontend.com/css-code-examples/).
 
